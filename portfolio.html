@@ -9,22 +9,37 @@
     <link rel="icon" href="./images/fish.png">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/939ba41449.js" crossorigin="anonymous"></script>
+    <script src="./script.js" defer></script>
 </head>
 <body>
+
+    <div id="top_menu">
+        <ul id="menu_ul">
+            <li class="menu_ct"><a href="./index.html"class="menu_ct_li">홈</a></li>
+            <li class="menu_ct"><a href="./과제2.html"class="menu_ct_li">이력서</a></li>
+            <li class="menu_ct"><a href="./과제1.html"class="menu_ct_li">기사</a></li>
+            <li class="menu_ct"><a href="./과제3.html"class="menu_ct_li">즐겨찾기</a></li>
+            <li class="menu_ct"><a href="./과제4.html"class="menu_ct_li">제품상세페이지</a></li>
+            <li class="menu_ct"><a href="./과제5.html"class="menu_ct_li">클론코딩과제</a></li>
+            <li class="menu_ct"><a href="./ani.html"class="menu_ct_li">애니메이션</a></li>
+            <li class="menu_ct"><a href="./portfolio.html"class="menu_ct_li">포트폴리오</a></li>
+        </ul>
+    </div>
+
     <!-- Navbar 시작 -->
-    <nav id="navbar">
+    <nav id="navbar" class="ggg">
         <div class="navbar__logo">
             <i class="fa-solid fa-user"></i>
             <a href="#">jaewon</a>
         </div>
         <!-- css이름주는 방식에대한 내용 BEM 나중에 검색해볼것 -->
         <ul class="navbar__menu">
-            <li class="navbar__menu__item active">홈</li>
-            <li class="navbar__menu__item">내 소개</li>
-            <li class="navbar__menu__item">기슐</li>
-            <li class="navbar__menu__item">경력</li>
-            <li class="navbar__menu__item">프로젝트</li>
-            <li class="navbar__menu__item">추천서</li>
+            <li class="navbar__menu__item active" data-link="#home">홈</li>
+            <li class="navbar__menu__item" data-link="#about">내 소개</li>
+            <li class="navbar__menu__item" data-link="#skills">기슐</li>
+            <li class="navbar__menu__item" data-link="#work">경력</li>
+            <li class="navbar__menu__item" data-link="#testimonials">프로젝트</li>
+            <li class="navbar__menu__item" data-link="#contact">추천서</li>
         </ul>
         <!-- 버튼 시작 -->
         <button class="navbar__toggle-btn">
@@ -41,7 +56,7 @@
             <img src="./images/logo.png" alt="jw's photo" class="home__avatar">
             <h1 class="home__title">Think Better, Live Better</h1>
             <h2 class="home__description">해양환경 ai개발자</h2>
-            <button class="home__contact">#COLLECTING #RECYCLING</button>
+            <button class="home__contact" >#COLLECTING #RECYCLING</button>
         </div>
     </section>
     <!-- Home 끝 -->
@@ -78,7 +93,7 @@
         </div>
         <div class="about__jobs">
             <div class="job">
-                <img src="./images/logo.png" alt="회사 로고">
+                <img src="./images/samsung.jpg" alt="회사 로고">
                 <div class="job__description">
                 <p class="job__name">
                     웹 에이전시 디자이너
@@ -108,7 +123,8 @@
                     <div class="skill">
                         <img class="skill_logo" src="./images/java.png" alt="">
                         <div class="skill__description">
-                            <span>Java<br>100%</span>
+                            <span>Java</span>
+                            <p><span>95%</span></p>
                         </div>
                         <div class="skill__bar">
                             <div class="skill_value"></div>
@@ -117,16 +133,18 @@
                     <div class="skill">
                         <img class="skill_logo" src="./images/python.png" alt="">
                         <div class="skill__description">
-                            <span>Python<br>100%</span>
+                            <span>Python</span>
+                            <p><span>95%</span></p>
                         </div>
-                        <div class="skill__bar">
+                        <div class="skill__bar">¬ø
                             <div class="skill_value"></div>
                         </div>
                     </div>
                     <div class="skill">
                         <img class="skill_logo" src="./images/mysql.png" alt="">
                         <div class="skill__description">
-                            <span>MySQL<br>100%</span>
+                            <span>MySQL</span>
+                            <p><span>95%</span></p>
                         </div>
                         <div class="skill__bar">
                             <div class="skill_value"></div>
@@ -135,7 +153,8 @@
                     <div class="skill">
                         <img class="skill_logo" src="./images/html-5.png" alt="">
                         <div class="skill__description">
-                            <span>HTML<br>100%</span>
+                            <span>HTML</span>
+                            <p><span>95%</span></p>
                         </div>
                         <div class="skill__bar">
                             <div class="skill_value"></div>
@@ -144,8 +163,8 @@
                     <div class="skill">
                         <img class="skill_logo" src="./images/css.png" alt="">
                         <div class="skill__description">
-                            <span>CSS<br>80%</span>
-
+                            <span>CSS</span>
+                            <p><span>95%</span></p>
                         </div>
                         <div class="skill__bar">
                             <div class="skill_value"></div>
@@ -154,7 +173,8 @@
                     <div class="skill">
                         <img class="skill_logo" src="./images/java-script.png" alt="">
                         <div class="skill__description">
-                            <span>JavaScript<br>100%</span>
+                            <span>JavaScript</span>
+                            <p><span>95%</span></p>
                         </div>
                         <div class="skill__bar">
                             <div class="skill_value"></div>
@@ -164,6 +184,7 @@
                         <img class="skill_logo" src="./images/linux.png" alt="">
                         <div class="skill__description">
                             <span>Linux</span>
+                            <p><span>95%</span></p>
 
                         </div>
                         <div class="skill__bar">
@@ -174,6 +195,7 @@
                         <img class="skill_logo" src="./images/jsp.png" alt="">
                         <div class="skill__description">
                             <span>JSP</span>
+                            <p><span>95%</span></p>
 
                         </div>
                         <div class="skill__bar">
@@ -184,6 +206,7 @@
                         <img class="skill_logo" src="./images/spring-logo.png" alt="">
                         <div class="skill__description">
                             <span>Spring</span>
+                            <p><span>95%</span></p>
 
                         </div>
                         <div class="skill__bar">
@@ -264,9 +287,39 @@
                     <h3 class="skillset__title">Etc</h3>
                     <div class="etc">
                         <div class="skill">
-                            <img class="skill_logo" src="./images/slack.png" alt="">
+                            <img class="skill_logo" src="./images/photoshop.png" alt="">
                             <div class="skill__description">
-                                <span>Slack</span>
+                                <span>Photoshop</span>
+    
+                            </div>
+                            <div class="skill__bar">
+                                <div class="skill_value"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <img class="skill_logo" src="./images/premierepro.png" alt="">
+                            <div class="skill__description">
+                                <span>Premiere Pro</span>
+    
+                            </div>
+                            <div class="skill__bar">
+                                <div class="skill_value"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <img class="skill_logo" src="./images/aftereffect.png" alt="">
+                            <div class="skill__description">
+                                <span>After Effects</span>
+    
+                            </div>
+                            <div class="skill__bar">
+                                <div class="skill_value"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <img class="skill_logo" src="./images/maya.png" alt="">
+                            <div class="skill__description">
+                                <span>Maya</span>
     
                             </div>
                             <div class="skill__bar">
@@ -274,6 +327,9 @@
                             </div>
                         </div>
                     </div>
+                    
+
+
                     </div>
                 </div>
             </div>
@@ -286,65 +342,76 @@
                 <h2>내 작업실</h2>
                 <h3>프로젝트</h3>
                 <div class="work__categories">
-                    <button class="category__btn">
+                    <button class="category__btn" data-filter="*">
                         전체 <span class="category__count">10</span>
                     </button>
-                    <button class="category__btn">
+                    <button class="category__btn" data-filter="front-end">
                         프론트엔드 <span class="category__count">5</span>
                     </button>
-                    <button class="category__btn">
+                    <button class="category__btn" data-filter="back-end">
                         백엔드 <span class="category__count">3</span>
                     </button>
-                    <button class="category__btn">
+                    <button class="category__btn" data-filter="mobile">
                         모바일 <span class="category__count">1</span>
                     </button>
                 </div>
-                <div class="work__projects">
-                    <a href="#" class="project" target="blank">
-                        <img src="./images/proimg.jpg" alt="" class="project__img"> 
-                        <div class="project__description">
-                            <h3>Youtube site</h3>
-                            <span>Clone coding 아주 똑같음</span>
+                <div class="abc">
+                        <div class="work__projects">
+                            <a href="#" class="project" target="blank" data-type="front-end">
+                                <img src="./images/proimg.jpg" alt="" class="project__img"> 
+                                <div class="project__description">
+                                    <h3>Youtube site</h3>
+                                    <span>Clone coding 아주 똑같음</span>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                    <a href="#" class="project" target="blank">
-                        <img src="./images/proimg.jpg" alt="" class="project__img"> 
-                        <div class="project__description">
-                            <h3>트리플 클론코딩</h3>
-                            <span>Clone coding 아주 똑같음</span>
+                        <div class="work__projects">  
+                            <a href="#" class="project" target="blank" data-type="front-end">
+                                <img src="./images/proimg.jpg" alt="" class="project__img"> 
+                                <div class="project__description">
+                                    <h3>트리플 클론코딩</h3>
+                                    <span>Clone coding 아주 똑같음</span>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                    <a href="#" class="project" target="blank">
-                        <img src="./images/proimg.jpg" alt="" class="project__img"> 
-                        <div class="project__description">
-                            <h3>여기어때</h3>
-                            <span>Clone coding 아주 똑같음</span>
+                        <div class="work__projects">        
+                            <a href="#" class="project" target="blank" data-type="mobile">
+                                <img src="./images/proimg.jpg" alt="" class="project__img"> 
+                                <div class="project__description">
+                                    <h3>여기어때</h3>
+                                    <span>Clone coding 아주 똑같음</span>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                    <a href="#" class="project" target="blank">
-                        <img src="./images/proimg.jpg" alt="" class="project__img"> 
-                        <div class="project__description">
-                            <h3>Naver</h3>
-                            <span>Clone coding 아주 똑같음</span>
+                        <div class="work__projects">    
+                            <a href="#" class="project" target="blank" data-type="front-end">
+                                <img src="./images/proimg.jpg" alt="" class="project__img"> 
+                                <div class="project__description">
+                                    <h3>Naver</h3>
+                                    <span>Clone coding 아주 똑같음</span>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                    <a href="#" class="project" target="blank">
-                        <img src="./images/proimg.jpg" alt="" class="project__img"> 
-                        <div class="project__description">
-                            <h3>야놀자</h3>
-                            
-                            <span>Clone coding 아주 똑같음</span>
+                        <div class="work__projects">
+                            <a href="#" class="project" target="blank" data-type="back-end">
+                                <img src="./images/proimg.jpg" alt="" class="project__img"> 
+                                <div class="project__description">
+                                    <h3>야놀자</h3>
+                                    
+                                    <span>Clone coding 아주 똑같음</span>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                    <a href="#" class="project" target="blank">
-                        <img src="./images/proimg.jpg" alt="" class="project__img"> 
-                        <div class="project__description">
-                            <h3>직방 클론코딩</h3>
-                            <span>Clone coding 아주 똑같음</span>
+                        <div class="work__projects">
+                            <a href="#" class="project" target="blank" data-type="back-end">
+                                <img src="./images/proimg.jpg" alt="" class="project__img"> 
+                                <div class="project__description">
+                                    <h3>직방 클론코딩</h3>
+                                    <span>Clone coding 아주 똑같음</span>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-    
-                </div>
+                    </div>
             </div>
         </section>
         <!-- 프로젝트 끝 -->
